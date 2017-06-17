@@ -26,7 +26,7 @@
        var filteredList= clientList.filter(function(item) {
           var firstName = item.name.split(" ")[0];
          var lastName = item.name.split(" ")[1];
-        return (item.name.toLowerCase().indexOf(val) !== -1  || firstName.toLowerCase().indexOf(val) !== -1 || lastName.toLowerCase().indexOf(val) !== -1   ||  item.policy.indexOf(val) !== -1 );
+        return (item.name.toLowerCase().indexOf(val.toLowerCase()) !== -1  || firstName.toLowerCase().indexOf(val.toLowerCase()) !== -1 || lastName.toLowerCase().indexOf(val.toLowerCase()) !== -1   ||  item.policy.indexOf(val.toLowerCase()) !== -1 );
       });
       return filteredList;
       }
